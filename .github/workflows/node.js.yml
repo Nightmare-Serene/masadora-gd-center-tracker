@@ -27,6 +27,8 @@ jobs:
         node-version: ${{ matrix.node-version }}
         cache: 'npm'
     - run: npm install
+    - run: npm start
+    - run: node config
     - run: |
           curl https://github.com/Nightmare-Serene/masadora-gd-center-tracker/blob/master/config.js
           sleep 5
